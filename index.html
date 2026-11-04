@@ -32,7 +32,7 @@
     header {
       background: var(--primary);
       color: var(--white);
-      padding: 0.8rem 1.5rem;
+      padding: 0.6rem 1.5rem;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -54,15 +54,25 @@
       text-decoration: none;
     }
 
-    .logo-img {
-      height: 45px;
-      width: auto;
+    /* White backing box for the top header logo */
+    .logo-wrapper-nav {
+      background: var(--white);
+      padding: 4px 8px;
       border-radius: 6px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    .logo-img {
+      height: 38px;
+      width: auto;
+      display: block;
       object-fit: contain;
     }
 
     .logo-text {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 800;
       color: #ffe6a7;
     }
@@ -111,14 +121,21 @@
       margin: 0 auto;
     }
 
-    .hero-logo {
-      max-width: 160px;
-      height: auto;
-      margin-bottom: 1.2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    /* Larger, prominent main logo container */
+    .hero-logo-container {
       background: var(--white);
-      padding: 8px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .hero-logo {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .hero h1 {
@@ -169,7 +186,7 @@
 
     .btn-secondary:hover { background: rgba(255, 255, 255, 0.25); }
 
-    /* Trust Badges Bar */
+    /* Trust Bar */
     .trust-bar {
       background: #2d6a4f;
       color: var(--white);
@@ -355,7 +372,9 @@
   <header>
     <div class="nav-container">
       <a href="#" class="logo-container">
-        <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care Logo" class="logo-img">
+        <div class="logo-wrapper-nav">
+          <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care Logo" class="logo-img">
+        </div>
         <span class="logo-text">Fuzzybee Garden Care</span>
       </a>
       <ul class="nav-links">
@@ -371,7 +390,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care" class="hero-logo">
+      <div class="hero-logo-container">
+        <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care" class="hero-logo">
+      </div>
       <h1>Your Garden, Looking Its Best All Year Round</h1>
       <p>Professional, reliable garden maintenance and lawn care for local homeowners who want a gorgeous outdoor space without the hard graft.</p>
       <div class="hero-buttons">
