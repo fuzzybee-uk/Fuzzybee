@@ -291,6 +291,46 @@
       height: 220px;
       object-fit: cover;
       display: block;
+      cursor: pointer;
+    }
+
+    /* Lightbox Fullscreen Modal */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      z-index: 2500;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 8px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
     }
 
     /* Why Choose Us */
@@ -504,10 +544,10 @@
       </div>
     </section>
 
-    <!-- 9-Photo Gallery Section (.png files) -->
+    <!-- 9-Photo Gallery Section (.png files with click-to-enlarge) -->
     <section id="gallery">
       <h2 class="section-title">Recent Work</h2>
-      <p class="section-subtitle">A quick look at some of our recent gardening, lawn care, and hedge trimming projects.</p>
+      <p class="section-subtitle">Click any photo to view it full-screen.</p>
       
       <div class="gallery-grid">
         <div class="gallery-card"><img src="image1.png" alt="Fuzzybee Gardening Project 1"></div>
@@ -559,10 +599,44 @@
 
   </div>
 
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox" class="lightbox-modal">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Enlarged view">
+  </div>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Fuzzybee Garden Care. All rights reserved. | Simple, reliable local gardening.</p>
   </footer>
+
+  <!-- Lightbox JavaScript Script -->
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const galleryImages = document.querySelectorAll('.gallery-card img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    // Close when clicking anywhere outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  </script>
 
 </body>
 </html>
