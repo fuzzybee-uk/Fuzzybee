@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fuzzybee Garden Care | Professional Local Gardening & Lawn Maintenance</title>
-  <meta name="description" content="Friendly, reliable garden maintenance, lawn care, and hedge trimming across the local area. Fully insured. Call for a free quote.">
+  <meta name="description" content="Friendly, reliable garden maintenance, lawn care, pruning, and planting across the local area. Fully insured. Call for a free quote.">
   <style>
     :root {
       --primary: #1b4332;
@@ -216,7 +216,7 @@
     /* Services Grid */
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
 
@@ -234,9 +234,19 @@
       margin-bottom: 0.8rem;
     }
 
-    .service-card p {
+    .service-card p, .service-card ul {
       color: var(--text-muted);
       font-size: 0.95rem;
+    }
+
+    .service-card ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .service-card li {
+      margin-bottom: 0.3rem;
     }
 
     /* Photo Gallery Grid */
@@ -388,32 +398,87 @@
       <h2 class="section-title">Reliable Garden Care You Can Trust</h2>
       <p class="section-subtitle">We take the hard work out of keeping your garden neat, tidy, and beautiful.</p>
       <div style="background: var(--white); padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
-        <p style="color: var(--text-muted); margin-bottom: 1rem;">At Fuzzybee Garden Care, we understand that a well-maintained garden is an extension of your home—but finding the time to keep on top of the mowing, weeding, and trimming can be a challenge.</p>
-        <p style="color: var(--text-muted);">Whether you are looking for regular fortnightly upkeep to keep your lawn pristine or a one-off seasonal clear-out to get things back under control, we provide honest, professional work with a friendly smile.</p>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">At Fuzzybee Garden Care, we understand that a well-maintained garden is an extension of your home—but finding the time to keep on top of the mowing, pruning, and tending can be a challenge.</p>
+        <p style="color: var(--text-muted);">Whether you are looking for regular upkeep or a comprehensive seasonal tidy-up, we provide honest, professional work with a friendly smile.</p>
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Detailed Services Section -->
     <section id="services">
-      <h2 class="section-title">What We Do</h2>
-      <p class="section-subtitle">Tailored garden maintenance packages to suit your garden's needs.</p>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Comprehensive garden care solutions tailored to your outdoor space.</p>
       
       <div class="services-grid">
         <div class="service-card">
-          <h3>🌱 Lawn Mowing & Care</h3>
-          <p>Regular grass cutting, clean edge trimming, and seasonal treatments to keep your lawn healthy, green, and lush.</p>
+          <h3>🌳 Pruning</h3>
+          <ul>
+            <li>Shrubs & roses</li>
+            <li>Fruit trees & small trees</li>
+            <li>Deadheading</li>
+          </ul>
         </div>
+
         <div class="service-card">
-          <h3>✂️ Hedge Trimming & Shaping</h3>
-          <p>Expert trimming and pruning of hedges, bushes, and shrubs to maintain clean lines and promote healthy growth.</p>
+          <h3>🌷 Planting</h3>
+          <ul>
+            <li>Shrubs, roses & summer bedding</li>
+            <li>Perennials, bulbs, containers & hanging baskets</li>
+            <li>Plants divided, removed or transplanted</li>
+          </ul>
         </div>
+
         <div class="service-card">
-          <h3>🌿 Border & Bed Maintenance</h3>
-          <p>Weeding, soil conditioning, and general upkeep of your flower beds so your planting areas stand out.</p>
+          <h3>🌱 Lawn Care</h3>
+          <ul>
+            <li>Professional mowing</li>
+            <li>Edges defined and neatly trimmed</li>
+          </ul>
         </div>
+
         <div class="service-card">
-          <h3>🍂 Garden Clear-Outs</h3>
-          <p>Transforming overgrown plots, cutting back stubborn brambles, clearing fallen leaves, and clearing green waste.</p>
+          <h3>✂️ Hedge Cutting</h3>
+          <ul>
+            <li>Specialist care for small hedges (6ft and under)</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>🌿 Border Maintenance</h3>
+          <ul>
+            <li>Weeding, mulching & feeding</li>
+            <li>Plant division, digging & soil upkeep</li>
+            <li>Unwanted plants safely removed</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>📐 Border Design</h3>
+          <ul>
+            <li>Planting plans and creative suggestions</li>
+            <li>Renovation and complete improvements</li>
+            <li>Existing plants transplanted or removed</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>🪴 Containers</h3>
+          <ul>
+            <li>Re-potting & feeding</li>
+            <li>Fresh seasonal planting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>🏡 House Plant Care</h3>
+          <ul>
+            <li>Professional re-potting</li>
+            <li>Targeted plant feeding</li>
+          </ul>
+        </div>
+
+        <div class="service-card" style="grid-column: 1 / -1; background: #e9f5ed; border-top-color: var(--accent);">
+          <h3 style="color: var(--primary);">✨ Garden Tidy Up: The Works!!</h3>
+          <p>The ultimate refresh for your outdoor space, covering: Leaf collection, patios swept, thorough weeding, dead plant material cut back, plants pruned and shaped, and unwanted plants removed.</p>
         </div>
       </div>
     </section>
@@ -466,7 +531,7 @@
         <a href="tel:07123456789" class="phone-display">07123 456789</a>
         
         <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">
-          📍 Serving <strong>[Insert Your Town Name]</strong> and surrounding local villages.
+          📍 Serving local homeowners across the area.
         </p>
       </div>
     </section>
@@ -480,4 +545,3 @@
 
 </body>
 </html>
-
