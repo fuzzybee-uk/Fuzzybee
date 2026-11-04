@@ -32,7 +32,7 @@
     header {
       background: var(--primary);
       color: var(--white);
-      padding: 0.6rem 1.5rem;
+      padding: 0.8rem 1.5rem;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -54,25 +54,8 @@
       text-decoration: none;
     }
 
-    /* Larger white backing box for the top header logo */
-    .logo-wrapper-nav {
-      background: var(--white);
-      padding: 6px 12px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    .logo-img {
-      height: 48px;
-      width: auto;
-      display: block;
-      object-fit: contain;
-    }
-
     .logo-text {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 800;
       color: #ffe6a7;
     }
@@ -113,12 +96,28 @@
       background-position: center;
       color: var(--white);
       text-align: center;
-      padding: 5rem 1.5rem 4.5rem;
+      padding: 4rem 1.5rem 4rem;
     }
 
     .hero-content {
       max-width: 750px;
       margin: 0 auto;
+    }
+
+    .hero-logo-container {
+      background: var(--white);
+      padding: 12px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .hero-logo {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .hero h1 {
@@ -242,6 +241,24 @@
       font-weight: 800;
       color: #ffe6a7;
       margin: 0.8rem 0;
+    }
+
+    .btn-wreath {
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+      display: inline-block;
+      margin-top: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.2s;
+    }
+
+    .btn-wreath:hover {
+      background: var(--accent-hover);
     }
 
     /* Services Grid */
@@ -435,9 +452,6 @@
   <header>
     <div class="nav-container">
       <a href="#" class="logo-container">
-        <div class="logo-wrapper-nav">
-          <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care Logo" class="logo-img">
-        </div>
         <span class="logo-text">Fuzzybee Garden Care</span>
       </a>
       <ul class="nav-links">
@@ -447,18 +461,21 @@
         <li><a href="#gallery">Recent Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="tel:07123456789" class="btn-header">Call Now</a>
+      <a href="tel:07557342179" class="btn-header">Call Now</a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
+      <div class="hero-logo-container">
+        <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care" class="hero-logo">
+      </div>
       <h1>Your Garden, Looking Its Best All Year Round</h1>
       <p>Professional, reliable garden maintenance and lawn care for local homeowners in Denmead and local areas who want a gorgeous outdoor space.</p>
       <div class="hero-buttons">
-        <a href="tel:07123456789" class="btn-primary">📞 Call for a Quote</a>
-        <a href="mailto:info@fuzzybeegardencare.co.uk" class="btn-primary btn-email">✉️ Email for a Quote</a>
+        <a href="tel:07557342179" class="btn-primary">📞 Call for a Quote</a>
+        <a href="mailto:info@fuzzybee.co.uk" class="btn-primary btn-email">✉️ Email for a Quote</a>
         <a href="#gallery" class="btn-secondary">View Our Work</a>
       </div>
     </div>
@@ -486,12 +503,13 @@
       </div>
     </section>
 
-    <!-- Christmas Wreaths Section -->
+    <!-- Christmas Wreaths Section with Enquire Button -->
     <section id="wreaths" class="wreaths-banner">
       <h2>🎄 Handmade Christmas Wreaths</h2>
       <p>Bring a touch of festive elegance to your front door this holiday season with our beautiful, handcrafted wreaths.</p>
       <div class="wreaths-price">£30 each</div>
-      <p style="font-size: 1.1rem; color: #e9ecef;">Includes <strong>free local delivery within Denmead</strong>!</p>
+      <p style="font-size: 1.1rem; color: #e9ecef; margin-bottom: 0.5rem;">Includes <strong>free local delivery within Denmead</strong>!</p>
+      <a href="mailto:info@fuzzybee.co.uk?subject=Christmas%20Wreath%20Enquiry" class="btn-wreath">✉️ Enquire Now via Email</a>
     </section>
 
     <!-- Detailed Services Section -->
@@ -629,8 +647,8 @@
         <h2>Get Your Free Garden Estimate Today</h2>
         <p>Ready to get your garden looking immaculate? Give us a call or drop us an email to discuss your requirements and arrange a visit.</p>
         
-        <a href="tel:07123456789" class="phone-display">07123 456789</a><br>
-        <a href="mailto:info@fuzzybeegardencare.co.uk" class="email-display">✉️ info@fuzzybeegardencare.co.uk</a>
+        <a href="tel:07557342179" class="phone-display">07557 342179</a><br>
+        <a href="mailto:info@fuzzybee.co.uk" class="email-display">✉️ info@fuzzybee.co.uk</a>
         
         <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">
           📍 Proudly serving Denmead and local areas.
