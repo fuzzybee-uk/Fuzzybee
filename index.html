@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fuzzybee Garden Care | Professional Local Gardening & Lawn Maintenance</title>
-  <meta name="description" content="Friendly, reliable garden maintenance, lawn care, pruning, and planting across the local area. Fully insured. Call for a free quote.">
+  <title>Fuzzybee Garden Care | Professional Local Gardening & Lawn Maintenance in Denmead</title>
+  <meta name="description" content="Friendly, reliable garden maintenance, lawn care, pruning, and planting across Denmead and local areas. Fully insured. Call or email for a free quote.">
   <style>
     :root {
       --primary: #1b4332;
@@ -54,18 +54,18 @@
       text-decoration: none;
     }
 
-    /* White backing box for the top header logo */
+    /* Larger white backing box for the top header logo */
     .logo-wrapper-nav {
       background: var(--white);
-      padding: 4px 8px;
-      border-radius: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .logo-img {
-      height: 38px;
+      height: 48px;
       width: auto;
       display: block;
       object-fit: contain;
@@ -113,7 +113,7 @@
       background-position: center;
       color: var(--white);
       text-align: center;
-      padding: 4rem 1.5rem 4rem;
+      padding: 5rem 1.5rem 4.5rem;
     }
 
     .hero-content {
@@ -121,25 +121,8 @@
       margin: 0 auto;
     }
 
-    /* Prominent main logo container */
-    .hero-logo-container {
-      background: var(--white);
-      padding: 12px 20px;
-      border-radius: 12px;
-      display: inline-block;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-    }
-
-    .hero-logo {
-      max-width: 260px;
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       margin-bottom: 1rem;
       line-height: 1.2;
     }
@@ -170,6 +153,12 @@
     }
 
     .btn-primary:hover { background: var(--accent-hover); }
+
+    .btn-email {
+      background: var(--primary-light);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .btn-email:hover { background: #1b4332; }
 
     .btn-secondary {
       background: rgba(255, 255, 255, 0.15);
@@ -228,6 +217,31 @@
       color: var(--text-muted);
       margin-bottom: 2.5rem;
       font-size: 1.05rem;
+    }
+
+    /* Christmas Wreaths Highlight Banner */
+    .wreaths-banner {
+      background: linear-gradient(135deg, #1b4332, #2d6a4f);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--accent);
+      margin-bottom: 3.5rem;
+    }
+
+    .wreaths-banner h2 {
+      color: #ffe6a7;
+      font-size: 2.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .wreaths-price {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ffe6a7;
+      margin: 0.8rem 0;
     }
 
     /* Services Grid */
@@ -376,7 +390,7 @@
 
     .contact-wrapper p {
       max-width: 600px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 1rem;
       color: #e9ecef;
     }
 
@@ -386,10 +400,19 @@
       color: #ffe6a7;
       text-decoration: none;
       display: inline-block;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
     }
 
     .phone-display:hover { text-decoration: underline; }
+
+    .email-display {
+      font-size: 1.2rem;
+      color: #ffe6a7;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .email-display:hover { text-decoration: underline; }
 
     /* Footer */
     footer {
@@ -402,7 +425,7 @@
 
     @media (max-width: 600px) {
       .nav-links { display: none; }
-      .hero h1 { font-size: 2rem; }
+      .hero h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -420,6 +443,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#wreaths">Wreaths</a></li>
         <li><a href="#gallery">Recent Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -430,13 +454,11 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-logo-container">
-        <img src="Fuzzybeelogo.png" alt="Fuzzybee Garden Care" class="hero-logo">
-      </div>
       <h1>Your Garden, Looking Its Best All Year Round</h1>
-      <p>Professional, reliable garden maintenance and lawn care for local homeowners who want a gorgeous outdoor space without the hard graft.</p>
+      <p>Professional, reliable garden maintenance and lawn care for local homeowners in Denmead and local areas who want a gorgeous outdoor space.</p>
       <div class="hero-buttons">
-        <a href="tel:07123456789" class="btn-primary">📞 Call for a Free Quote</a>
+        <a href="tel:07123456789" class="btn-primary">📞 Call for a Quote</a>
+        <a href="mailto:info@fuzzybeegardencare.co.uk" class="btn-primary btn-email">✉️ Email for a Quote</a>
         <a href="#gallery" class="btn-secondary">View Our Work</a>
       </div>
     </div>
@@ -457,11 +479,19 @@
     <!-- About Section -->
     <section id="about">
       <h2 class="section-title">Reliable Garden Care You Can Trust</h2>
-      <p class="section-subtitle">We take the hard work out of keeping your garden neat, tidy, and beautiful.</p>
+      <p class="section-subtitle">We take the hard work out of keeping your garden neat, tidy, and beautiful across Denmead and local areas.</p>
       <div style="background: var(--white); padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
         <p style="color: var(--text-muted); margin-bottom: 1rem;">At Fuzzybee Garden Care, we understand that a well-maintained garden is an extension of your home—but finding the time to keep on top of the mowing, pruning, and tending can be a challenge.</p>
         <p style="color: var(--text-muted);">Whether you are looking for regular upkeep or a comprehensive seasonal tidy-up, we provide honest, professional work with a friendly smile.</p>
       </div>
+    </section>
+
+    <!-- Christmas Wreaths Section -->
+    <section id="wreaths" class="wreaths-banner">
+      <h2>🎄 Handmade Christmas Wreaths</h2>
+      <p>Bring a touch of festive elegance to your front door this holiday season with our beautiful, handcrafted wreaths.</p>
+      <div class="wreaths-price">£30 each</div>
+      <p style="font-size: 1.1rem; color: #e9ecef;">Includes <strong>free local delivery within Denmead</strong>!</p>
     </section>
 
     <!-- Detailed Services Section -->
@@ -508,7 +538,6 @@
           <ul>
             <li>Weeding, mulching & feeding</li>
             <li>Plant division, digging & soil upkeep</li>
-            <li>Unwanted plants safely removed</li>
           </ul>
         </div>
 
@@ -526,6 +555,7 @@
           <ul>
             <li>Re-potting & feeding</li>
             <li>Fresh seasonal planting</li>
+            <li>Holiday watering care</li>
           </ul>
         </div>
 
@@ -534,17 +564,27 @@
           <ul>
             <li>Professional re-potting</li>
             <li>Targeted plant feeding</li>
+            <li>Holiday watering care</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>🍂 Leaf & Seasonal Clearing</h3>
+          <ul>
+            <li>Autumn leaf clearance</li>
+            <li>Garden debris removal</li>
+            <li>Pathway and patio debris clearing</li>
           </ul>
         </div>
 
         <div class="service-card" style="grid-column: 1 / -1; background: #e9f5ed; border-top-color: var(--accent);">
-          <h3 style="color: var(--primary);">✨ Garden Tidy Up: The Works!!</h3>
-          <p>The ultimate refresh for your outdoor space, covering: Leaf collection, patios swept, thorough weeding, dead plant material cut back, plants pruned and shaped, and unwanted plants removed.</p>
+          <h3 style="color: var(--primary);">✨ Garden Tidy Up: The Works!</h3>
+          <p>The ultimate refresh for your outdoor space, covering: Leaf collection, patios swept, dead plant material cut back, plants pruned and shaped, and unwanted plants removed.</p>
         </div>
       </div>
     </section>
 
-    <!-- 9-Photo Gallery Section (.png files with click-to-enlarge) -->
+    <!-- 9-Photo Gallery Section -->
     <section id="gallery">
       <h2 class="section-title">Recent Work</h2>
       <p class="section-subtitle">Click any photo to view it full-screen.</p>
@@ -574,7 +614,7 @@
         </div>
         <div class="feature-item">
           <h4>Clean & Tidy Finish</h4>
-          <p>We bag up our green waste and leave your paths and patios spotless.</p>
+          <p>We work neatly and tidy up after ourselves (please note: we do not take away green waste).</p>
         </div>
         <div class="feature-item">
           <h4>Transparent Pricing</h4>
@@ -587,12 +627,13 @@
     <section id="contact">
       <div class="contact-wrapper">
         <h2>Get Your Free Garden Estimate Today</h2>
-        <p>Ready to get your garden looking immaculate? Give us a quick call or drop us a message to discuss your requirements and arrange a visit.</p>
+        <p>Ready to get your garden looking immaculate? Give us a call or drop us an email to discuss your requirements and arrange a visit.</p>
         
-        <a href="tel:07123456789" class="phone-display">07123 456789</a>
+        <a href="tel:07123456789" class="phone-display">07123 456789</a><br>
+        <a href="mailto:info@fuzzybeegardencare.co.uk" class="email-display">✉️ info@fuzzybeegardencare.co.uk</a>
         
         <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">
-          📍 Serving local homeowners across the area.
+          📍 Proudly serving Denmead and local areas.
         </p>
       </div>
     </section>
@@ -607,7 +648,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Fuzzybee Garden Care. All rights reserved. | Simple, reliable local gardening.</p>
+    <p>&copy; 2026 Fuzzybee Garden Care. All rights reserved. | Simple, reliable local gardening in Denmead.</p>
   </footer>
 
   <!-- Lightbox JavaScript Script -->
@@ -630,7 +671,6 @@
 
     closeBtn.addEventListener('click', closeLightbox);
     
-    // Close when clicking anywhere outside the image
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) {
         closeLightbox();
